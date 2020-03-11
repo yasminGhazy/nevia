@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+div {
+    display: block;
+}
+
+.floatr {
+    float: right;
+}
+
+#wrapper {
+    background-color: #fff;
+    width: 1020px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+#blueline {
+    background-color: #169fe6;
+    height: 5px;
+}
+.logo{
+margin-right:10px;
+}
+#logo-text{
+    display: inline-block;
+    padding-left:20px ;
+    padding-top:5px ;
+    padding-bottom:5px ;
+    color :#888;
+    font-size: 12px;
+    border-left: 1px solid #e8e8e8;
+}
+
+#social-media {
+    float: right;
+    margin: 20px 0 10px;
+
+}
+
+#social-media ul {
+    background-color: transparent;
+    padding: 0px;
+}
+
+#social-media li {
+    list-style: none;
+    display:block;
+    width: calc(100% / 5 - 27px);
+    opacity: .4;
+    float: right;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+#social-media img {
+    width: 100%;
+    float: left;
+    cursor: pointer;
+}
+
+#contact {
+    font-size: 11px;
+    color: #888;
+    cursor: pointer;
+    margin: 0px;
+    float: right;
+    padding: 2px;
+
+}
+
+#contact:hover {
+    color: black;
+}
+.form-inline{
+    margin-bottom: 20px;
+    float: right;
+
+}
+.form-inline button {
+    padding: 8px 9px;
+    margin: 0px;
+    font-size: 11px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, .03);
+    border-left: 0px;
+    background-color: white;
+    color: #888;
+}
+
+.form-inline input {
+    padding: 8px 9px;
+    margin: 0px;
+    font-size: 11px;
+    width: 180px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, .03);
+    border-right: 0px;
+}
+.navbar-nav{
+width: 100%;
+float: left;
+}
+nav a{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+nav li{
+display: inline-block;
+    opacity: 1;
+    width: calc(100% /7 - 30px);
+
+}
+.nav-link{
+color:white;
+opacity: 1;
+
+}
+.icon{
+color: white;
+float: left;
+
+}
+.nav-item{
+    border-right:1px solid #666; 
+display: inline-flex;
+}
