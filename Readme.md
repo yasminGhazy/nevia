@@ -8,8 +8,8 @@
 >> -  navigation menu.
 > ## Body ##
 >> -  Slider show .
->> -  Recomended videos.
 >> -  general information .
+>> -  Recomended videos.
 >> -  Recent work.
 >> -  Recent news. 
 >> -  What out clients says.
