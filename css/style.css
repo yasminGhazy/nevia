@@ -15,6 +15,10 @@ div {
     float: right;
 }
 
+.container::after {
+    clear: both;
+}
+
 #wrapper {
     background-color: #fff;
     width: 1020px;
@@ -139,7 +143,9 @@ nav li {
     border-right: 1px solid #666;
     display: inline-flex;
 }
-
+.nav-item:last-child{
+    border:none; 
+}
 #gen-info p {
     font-size: 13px;
     color: #666666;
@@ -221,6 +227,10 @@ main h4 {
     font-size: 13px;
 }
 
+footer {
+    /* padding:30px 0 31px;*/
+}
+
 footer h4, span {
     color: #ffffff;
     font-size: 14px;
@@ -228,11 +238,13 @@ footer h4, span {
 }
 
 footer i {
-    padding:0px;
+    padding: 0px;
 }
-footer .fa{
+
+footer .fa {
     color: #ffffff;
 }
+
 #upperfooter {
     background: #4c4c4c;
     padding: 30px 0 31px;
@@ -244,9 +256,32 @@ footer .fa{
     font-size: 12px;
 }
 
+#upperfooter img:not(#footerlogo) {
+    float: left;
+    width: 58px;
+    height: 58px;
+    border: 5px solid #424242;
+    margin-bottom: 6px;
+    margin-right: 6px;
+}
+
+#upperfooter img:not(#footerlogo):hover {
+    border: 5px solid #169fe6;
+}
+#email:hover{
+color: #eeeeee;
+cursor: pointer;
+}
 #lowerfooter {
     background: #424242;
     padding: 0;
+}
+
+#copyright {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 12px;
+    padding: 0px;
 }
 
 #lowerfooter p {
@@ -254,8 +289,25 @@ footer .fa{
     margin: 0px;
     color: #aaaaaa;
 }
-#lowerfooter a{
+
+#lowerfooter a:not(#copyright) {
+    font-size: 11px;
     text-decoration: none;
-    color:#ffffff;
-} 
-#contact-details {}
+    color: #aaaaaa;
+    padding: 0px 8px;
+    list-style: none;
+}
+
+#lowerfooter a:not(#copyright):hover {
+    color: #eeeeee;
+}
+
+#lowerfooter li {
+    list-style: none;
+    border-left: 1px solid #505050;
+    line-height: 12px;
+}
+
+#lowerfooter li:first-child {
+    border-left: none;
+}
