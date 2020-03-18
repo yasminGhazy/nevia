@@ -55,7 +55,7 @@ div {
     padding: 0px;
 }
 
-#social-media li {
+ li {
     list-style: none;
     display: block;
     width: calc(100% / 5 - 27px);
@@ -63,7 +63,7 @@ div {
     float: right;
 }
 
-li:hover {
+#social-media li:hover {
     opacity: 1;
 }
 
@@ -118,20 +118,25 @@ li:hover {
 }
 
 nav a {
-    color: white;
+    color: rgba(255,255,255,.5);
     font-size: 13px;
     text-align: center;
+    padding: 15px 20px 16px;
+    opacity: 1;
+    text-decoration: none;
 }
+nav a:hover{
+    color: white;
+    text-decoration: none;
 
+}
 nav li {
     display: inline-block;
     opacity: 1;
     width: calc(100% /7 - 30px);
 }
-
-.nav-link {
-    color: white;
-    opacity: 1;
+.navbar{
+    padding:0rem 0rem;
 }
 
 .icon {
@@ -142,10 +147,46 @@ nav li {
 .nav-item {
     border-right: 1px solid #666;
     display: inline-flex;
+    line-height: 18px;
+
 }
-.nav-item:last-child{
-    border:none; 
+
+.nav-item:last-child {
+    border: none;
 }
+
+.carousel img {
+    width: 100%;
+    position: relative;
+}
+
+#slide1 {
+    font-size: 14px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #DC354A;
+    padding: 18px 22px;
+    position: absolute;
+    left: 700px;
+    top: 400px;
+}
+
+#slide2 {
+    font-size: 14px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #4c4c4c;
+    background: rgba(0, 0, 0, .4);
+    padding: 18px 22px;
+    position: absolute;
+    left: 70px;
+    top: 400px;
+}
+
+.carousel-control-next-icon {
+    background-color: #4c4c4c;
+}
+
 #gen-info p {
     font-size: 13px;
     color: #666666;
@@ -190,8 +231,14 @@ main h4 {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .12), 0 0 1px rgba(0, 0, 0, .1);
     border-top: 5px solid #e5e5e5;
     text-align: center;
+    margin: 0px;
 }
-
+.recent-div:hover .img-text{
+    border-top: 5px solid  #169fe6;
+}
+.recent-div img{
+width: 100%;
+}
 #news span {
     font-size: 16px;
     color: #888888;
@@ -268,10 +315,12 @@ footer .fa {
 #upperfooter img:not(#footerlogo):hover {
     border: 5px solid #169fe6;
 }
-#email:hover{
-color: #eeeeee;
-cursor: pointer;
+
+#email:hover {
+    color: #eeeeee;
+    cursor: pointer;
 }
+
 #lowerfooter {
     background: #424242;
     padding: 0;
