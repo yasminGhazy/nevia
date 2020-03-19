@@ -3,7 +3,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: open sans,helveticaneue,helvetica neue,Helvetica,Arial,sans-serif;
     margin: 0px;
 }
 
@@ -13,10 +14,6 @@ div {
 
 .floatr {
     float: right;
-}
-
-.container::after {
-    clear: both;
 }
 
 #wrapper {
@@ -50,15 +47,15 @@ div {
     margin: 20px 0 10px;
 }
 
-#social-media ul {
+ul {
     background-color: transparent;
     padding: 0px;
 }
 
- li {
+#social-media li {
     list-style: none;
     display: block;
-    width: calc(100% / 5 - 27px);
+    width: calc(100% / 5 - 38px);
     opacity: .4;
     float: right;
 }
@@ -118,25 +115,27 @@ div {
 }
 
 nav a {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     font-size: 13px;
     text-align: center;
     padding: 15px 20px 16px;
     opacity: 1;
     text-decoration: none;
 }
-nav a:hover{
+
+nav a:hover {
     color: white;
     text-decoration: none;
-
 }
+
 nav li {
     display: inline-block;
     opacity: 1;
     width: calc(100% /7 - 30px);
 }
-.navbar{
-    padding:0rem 0rem;
+
+.navbar {
+    padding: 0rem 0rem;
 }
 
 .icon {
@@ -148,11 +147,14 @@ nav li {
     border-right: 1px solid #666;
     display: inline-flex;
     line-height: 18px;
-
 }
 
 .nav-item:last-child {
     border: none;
+}
+
+.carousel-control-prev-icon {
+    background-color: grey;
 }
 
 .carousel img {
@@ -233,12 +235,23 @@ main h4 {
     text-align: center;
     margin: 0px;
 }
-.recent-div:hover .img-text{
-    border-top: 5px solid  #169fe6;
+
+.recent-div:hover .img-text {
+    border-top: 5px solid #169fe6;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .12), 0 0 1px rgba(0, 0, 0, .1);
+cursor: pointer;
 }
-.recent-div img{
-width: 100%;
+
+.recent-div img {
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
 }
+.recent-div:hover img {
+    
+    opacity:.5;
+}
+
 #news span {
     font-size: 16px;
     color: #888888;
@@ -251,13 +264,50 @@ width: 100%;
 #news a {
     font-size: 14px;
     color: #333333;
+    letter-spacing:-.5px;
 }
 
 #news p {
     font-size: 13px;
     color: #666666;
 }
+#news h3{
+    margin-bottom: 20px;
+}
+#news .col-sm-3 , #news  .col-sm-9 {
+padding:0px ;
+}
+.date {
+    float: left;
+    text-align: center;
+    padding: 0px;
+}
 
+.day {
+    background: #f2f2f2;
+    padding: 10px;
+    color: #999;
+    border-radius: 2px 2px 0 0;
+    font-size: 16px;
+    display: block;
+}
+
+.month {
+    background: #ccc;
+    padding: 0 10px 2px;
+    color: #fff;
+    border-radius: 0 0 2px 2px;
+    font-size: 16px;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .07);
+}
+.recent-title {
+    margin-bottom: 20px ;
+    opacity: 1;
+}
+.recent-title:hover {
+    opacity: .6;
+    cursor: pointer;
+}
 #Testimonial {
     box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .06);
     background: #f6f6f6;
@@ -272,15 +322,22 @@ width: 100%;
 #author span {
     color: #169fe6;
     font-size: 13px;
+    cursor: pointer;
 }
 
 footer {
     /* padding:30px 0 31px;*/
 }
 
-footer h4, span {
+footer h4 {
     color: #ffffff;
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+footer span {
     font-size: 14px;
+    color: #ffffff;
     margin: 0 0 15px;
 }
 
@@ -300,7 +357,8 @@ footer .fa {
 
 #upperfooter p {
     color: #dddddd;
-    font-size: 12px;
+    font-size: 14px;
+    padding-left: 2px;
 }
 
 #upperfooter img:not(#footerlogo) {
@@ -314,6 +372,10 @@ footer .fa {
 
 #upperfooter img:not(#footerlogo):hover {
     border: 5px solid #169fe6;
+}
+
+#upperfooter .col-sm-4 {
+    padding: 0px;
 }
 
 #email:hover {
