@@ -11,7 +11,9 @@ body {
 div {
     display: block;
 }
-
+.active-nav{
+    background-color: #169fe6;
+}
 .floatr {
     float: right;
 }
@@ -115,43 +117,34 @@ ul {
 }
 
 nav a {
-    color: rgba(255, 255, 255, .5);
+    color: #fff;
     font-size: 13px;
     text-align: center;
     padding: 15px 20px 16px;
     opacity: 1;
     text-decoration: none;
+    float: left;
+    border-right: 1px solid #666;
 }
 
-nav a:hover {
+nav a:hover{
     color: white;
     text-decoration: none;
 }
-
-nav li {
-    display: inline-block;
-    opacity: 1;
-    width: calc(100% /7 - 30px);
+nav li:not(:first-child) a:hover{
+    background-color: #666;
+   
 }
 
-.navbar {
-    padding: 0rem 0rem;
+
+.navbar  {
+    padding: 0rem 0rem  !important ;
 }
 
-.icon {
-    color: white;
-    float: left;
+.dropdown-menu{
+    margin: 0px !important;
 }
 
-.nav-item {
-    border-right: 1px solid #666;
-    display: inline-flex;
-    line-height: 18px;
-}
-
-.nav-item:last-child {
-    border: none;
-}
 
 .carousel-control-prev-icon {
     background-color: grey;
@@ -422,3 +415,104 @@ footer .fa {
 #lowerfooter li:first-child {
     border-left: none;
 }
+
+
+/* option 1
+<div class="col-sm-3 recent-div">
+<img src="images/recent1.PNG" alt="1">
+<div class="img-text">
+    <h5>Time Is Running Out</h5>
+    <span> Photography</span>
+</div>
+
+</div>
+
+<div class="col-sm-3 recent-div">
+<img src="images/recent2.PNG" alt="1">
+<div class="img-text">
+    <h5>Seeds of Growth</h5>
+    <span> Architecture</span>
+</div>
+
+</div>
+
+<div class="col-sm-3 recent-div">
+<img src="images/recent3.PNG" alt="1">
+<div class="img-text">
+    <h5>Beautiful Flowers</h5>
+    <span> Identity</span>
+</div>
+</div>
+*/
+
+/* option 2 
+   <div class="owl-carousel owl-theme col-sm-9 row">
+                        <div class="item recent-div">
+                            <img src="images/recent1.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Time Is Running Out</h5>
+                                <span> Photography</span>
+                            </div>
+
+                        </div>
+
+                        <div class="item recent-div">
+                            <img src="images/recent2.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Seeds of Growth</h5>
+                                <span> Architecture</span>
+                            </div>
+
+                        </div>
+
+                        <div class="item recent-div">
+                            <img src="images/recent3.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Beautiful Flowers</h5>
+                                <span> Identity</span>
+                            </div>
+                        </div>
+                        <div class="item recent-div">
+                            <img src="images/recent4.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Time Is Running Out</h5>
+                                <span> Photography</span>
+                            </div>
+
+                        </div>
+
+                        <div class="item recent-div">
+                            <img src="images/recent5.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Seeds of Growth</h5>
+                                <span> Architecture</span>
+                            </div>
+
+                        </div>
+
+                        <div class="item recent-div">
+                            <img src="images/recent6.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Beautiful Flowers</h5>
+                                <span> Identity</span>
+                            </div>
+                        </div>
+
+                        <div class="item recent-div">
+                            <img src="images/recent7.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Seeds of Growth</h5>
+                                <span> Architecture</span>
+                            </div>
+
+                        </div>
+
+                        <div class="item recent-div">
+                            <img src="images/recent8.PNG" alt="1">
+                            <div class="img-text">
+                                <h5>Beautiful Flowers</h5>
+                                <span> Identity</span>
+                            </div>
+                        </div>
+                    </div> 
+                    */                    
