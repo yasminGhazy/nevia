@@ -1,19 +1,25 @@
-/*$('.owl-carousel').owlCarousel({
-    loop:true,
+$('.owl-carousel').owlCarousel({
+    loop:false,
     margin:10,
     nav:true,
+
     responsive:{
         0:{
             items:1
         },
-        600:{
+        700:{
             items:2
         },
         1000:{
             items:3
         }
     }
-})*/
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+
+  
+})
+ $(".next").click(function(){
+    owl.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+    owl.trigger('owl.prev');
+  })
