@@ -22,7 +22,7 @@ div {
     float: right;
 }
 
-@media only screen and (max-width: 959px) and (min-width: 768px) {
+@media only screen and (max-width: 955px) and (min-width: 768px) {
     #wrapper, footer {
         width: 714px !important;
         margin: 0 auto;
@@ -33,13 +33,12 @@ div {
     nav {
         width: 734px !important;
     }
-    #left{
-top:34px !important;
+    #left {
+        top: 29px !important;
     }
-    #right{
-        left:695px !important;
-        top:34px !important;
-
+    #right {
+        left: 714px !important;
+        top: 29px !important;
     }
 }
 
@@ -48,7 +47,6 @@ top:34px !important;
         width: 420px !important;
         margin: 0 auto;
     }
-    
 }
 
 #wrapper, footer {
@@ -73,7 +71,7 @@ header {
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 767px) and (min-width: 480px) {
+@media only screen and ( max-width: 767px) {
     #logo-text, #social-media, #contact, .form-inline, nav {
         display: none !important;
     }
@@ -84,13 +82,6 @@ header {
         width: 420px;
         height: 185.294px;
     }
-    #slide1 {
-        display: none;
-    }
-    #slide2 {
-        display: none;
-    }
-   
 }
 
 #logo-text {
@@ -112,7 +103,7 @@ header {
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
     border-radius: 2px;
     font-size: 14px;
-    padding: 8px 9px;
+    padding: 8px 5px;
     color: #888;
 }
 
@@ -168,7 +159,7 @@ ul {
 }
 
 .form-inline button {
-    padding: 8px 9px;
+    padding: 8px 5px;
     margin: 0px;
     font-size: 11px;
     border: 1px solid #e0e0e0;
@@ -179,7 +170,7 @@ ul {
 }
 
 .form-inline input {
-    padding: 8px 9px;
+    padding: 8px 5px;
     margin: 0px;
     font-size: 11px;
     width: 180px;
@@ -226,26 +217,28 @@ nav li:not(:first-child) a:hover {
 #left {
     /*   border: 10px solid 10px solid 10px solid 10px solid;
     border-color: #888 #888 green green;*/
-    border-left: 10px solid transparent;
-    border-right: 10px solid #888;
-    border-top: 10px solid #888;
-    border-bottom: 10px solid transparent;
-    top: 35px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid #888;
+    border-top: 5px solid #888;
+    border-bottom: 5px solid transparent;
+    top: 30px;
     float: left;
     position: relative;
     opacity: .5;
 }
-#right{
-    border-left: 10px solid #888;
-    border-right: 10px solid transparent ;
-    border-top: 10px solid #888 ;
-    border-bottom: 10px solid transparent;
-    left:1000px;
-    top: 35px;
+
+#right {
+    border-left: 5px solid #888;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #888;
+    border-bottom: 5px solid transparent;
+    left: 1020px;
+    top: 30px;
     float: right;
     position: relative;
     opacity: .5;
 }
+
 .dropdown-menu {
     margin: 0px !important;
 }
@@ -266,6 +259,12 @@ nav li:not(:first-child) a:hover {
 #carousel-img {
     width: "1020";
     height: "500";
+}
+
+ .owl-next:hover .owl-next{
+ 
+      background: blue;
+    
 }
 
 #slide1 {
@@ -334,7 +333,7 @@ main h4 {
 }
 
 .img-text {
-    padding: 14px 0 19px;
+    padding: 14px 0 15px;
     background-color: #fff;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .12), 0 0 1px rgba(0, 0, 0, .1);
     border-top: 5px solid #e5e5e5;
@@ -358,15 +357,14 @@ main h4 {
     opacity: .5;
 }
 
-
-
 #news span {
     font-size: 16px;
     color: #888888;
 }
 
 #news {
-    margin-left: 40px;
+    padding: 20px;
+    overflow: hidden;
 }
 
 #news a {
@@ -380,7 +378,7 @@ main h4 {
     color: #666666;
 }
 
-#news h3 {
+#news h4 {
     margin-bottom: 20px;
 }
 
@@ -542,6 +540,30 @@ footer .fa {
 
 #lowerfooter li:first-child {
     border-left: none;
+}
+
+#owl-demo .item {
+    background: #3fbf79;
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.customNavigation {
+    text-align: center;
+}
+
+.customNavigation a {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /*
