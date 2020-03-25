@@ -22,6 +22,10 @@ div {
     float: right;
 }
 
+li {
+    list-style: none;
+}
+
 @media only screen and (max-width: 955px) and (min-width: 768px) {
     #wrapper, footer {
         width: 714px !important;
@@ -33,22 +37,41 @@ div {
     nav {
         width: 734px !important;
     }
-    nav::before{
-        top:50px !important;
-    
+    nav::before {
+        top: 50px !important;
     }
-    nav::after{
-        left:724px !important;
-        top:50px !important;
-    
+    nav::after {
+        left: 724px !important;
+        top: 50px !important;
     }
  
+    .owl-next {
+        top: 110px !important;
+        left: -140px !important;
+    }
+    
+    .owl-prev {
+        top: 110px !important;
+        left: -162px !important;
+    }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
     #wrapper, footer {
         width: 420px !important;
         margin: 0 auto;
+    }
+    #recent p{
+margin-bottom: 100px;
+    }
+    .owl-next {
+        top: -80px !important;
+        left: 35px !important;
+    }
+    
+    .owl-prev {
+        top: -80px !important;
+        left: 12px !important;
     }
 }
 
@@ -187,32 +210,29 @@ ul {
     width: 100%;
     float: left;
 }
-nav::before{
+
+nav::before {
     content: "";
-  
     border-left: 5px solid transparent;
     border-right: 5px solid #888;
     border-top: 5px solid #888;
     border-bottom: 5px solid transparent;
-    top:50px;
-
-position: absolute;
-opacity: .5;
+    top: 50px;
+    position: absolute;
+    opacity: .5;
 }
-nav::after{
-    content: "";
 
+nav::after {
+    content: "";
     border-left: 5px solid #888;
     border-right: 5px solid transparent;
     border-top: 5px solid #888;
     border-bottom: 5px solid transparent;
     left: 1030px;
     top: 50px;
-    
     position: absolute;
     opacity: .5;
 }
-
 
 nav {
     width: 1040px;
@@ -243,8 +263,6 @@ nav li:not(:first-child) a:hover {
     padding: 0rem 0rem !important;
 }
 
-
-
 .dropdown-menu {
     margin: 0px !important;
 }
@@ -267,21 +285,26 @@ nav li:not(:first-child) a:hover {
     height: "500";
 }
 
- .owl-next , .owl-prev{
- color:#eee !important;
-      background: #ccc !important;
-      box-shadow: inset 0 -1px 0 0 rgba(0,0,0,.05) !important;
-    
+.owl-next, .owl-prev {
+    color: #eee !important;
+    background: #ccc !important;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .05) !important;
+    position: absolute;
 }
-.owl-prev:hover .owl-prev{
+
+.owl-prev:hover .owl-prev {
     background-color: #169fe6 !important;
 }
-.owl-next{
-    top:-100px !important;
+.owl-carousel .owl-nav button.owl-prev{
+    top: 95px ;
+    left: -240px ;
 }
-.owl-prev{
-    top:-50px !important;
+.owl-carousel .owl-nav button.owl-next{
+        top: 95px ;
+    left: -218px ;
 }
+
+
 #slide1 {
     font-size: 14px;
     border-radius: 2px;
@@ -308,9 +331,11 @@ nav li:not(:first-child) a:hover {
 .carousel-control-next-icon {
     background-color: #4c4c4c;
 }
-#gen-info{
+
+#gen-info {
     margin-bottom: 20px;
 }
+
 #gen-info p {
     font-size: 13px;
     color: #666666;
@@ -326,11 +351,11 @@ main h4 {
 }
 
 #recent {
-    padding-left:20px ;
+    padding-left: 20px;
     background: #fcfcfc;
     border-top: 1px solid #e8e8e8;
     border-bottom: 1px solid #e8e8e8;
-    box-shadow:  0 2px 0 0 #f7f7f7, inset 0 -2px 0 0 #f7f7f7;
+    box-shadow: 0 2px 0 0 #f7f7f7, inset 0 -2px 0 0 #f7f7f7;
 }
 
 #recent p {
@@ -390,8 +415,6 @@ main h4 {
 #news {
     padding: 20px;
     overflow: hidden;
-    
-
 }
 
 #news a {
@@ -493,7 +516,6 @@ footer .fa {
     padding: 30px 0 40px;
     margin: 0 auto;
     padding-left: 15px;
-
 }
 
 #upperfooter p {
@@ -502,7 +524,7 @@ footer .fa {
     padding-left: 2px;
 }
 
-#upperfooter img:not(#footerlogo) {
+#upperfooter img:not(.footerlogo) {
     float: left;
     width: 67px;
     height: 67px;
@@ -511,7 +533,29 @@ footer .fa {
     margin-right: 6px;
 }
 
-#upperfooter img:not(#footerlogo):hover {
+#twitter li {
+    background: url("images/recent1.PNG") no-repeat left 5%;
+    margin-left: 25px;
+}
+
+#twitter p {
+    font-size: 12px;
+}
+
+#twitter small {
+    color: #999;
+    margin-top: 5px;
+}
+
+.fa-twitter {
+    opacity: .2;
+}
+
+.col-11 {
+    padding-left: 0px !important;
+}
+
+#upperfooter img:not(.footerlogo):hover {
     border: 5px solid #169fe6;
 }
 
@@ -524,13 +568,10 @@ footer .fa {
     cursor: pointer;
 }
 
-
-
 #lowerfooter {
     background: #424242;
     padding-top: 15px;
     padding-left: 28px;
-
 }
 
 #copyright {
@@ -574,9 +615,10 @@ footer .fa {
 }
 
 #photo-stream img {
-width: 58px;
-height: 58px;
+    width: 58px;
+    height: 58px;
 }
+
 /*
 
 
